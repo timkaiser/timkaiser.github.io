@@ -1,9 +1,44 @@
-:root{
-	--color1: #73a60c;
-	--color2: #36802d;
-	--color3: #77ab59;
-	--color4: #ffffff; 
-	--color5: #ffffff; 
+:root{ 
+	/* green-white
+	--backgroundColor: #ffffff;
+	--accentColor: #73a60c;
+	--hoverColor: #53860c; 
+	--cardColor: #ffffff;
+	--fontColor: #868e96;
+	*/
+	
+	/* grey-blue-yellow *
+	--backgroundColor: #00a0b0;
+	--accentColor: #6a4a3c;
+	--hoverColor: #cc333f; 
+	--cardColor: #6a4a3c;
+	--fontColor: #edc951;
+	*/
+	
+	/* red-black
+	--backgroundColor: #000000;
+	--accentColor: #9f111b;
+	--hoverColor: #b11623; 
+	--cardColor: #9f111b;
+	--fontColor: #cccccc;
+	*/
+	
+	/* Blue-Beige */
+	--backgroundColor: #e8ddcb;
+	--accentColor: #036564;
+	--hoverColor: #033649; 
+	--cardColor: #c8bdab;
+	--fontColor: #031634;
+	
+	
+	/* Blue-gray-yellow
+	--backgroundColor: #594f4f;
+	--accentColor: #547980;
+	--hoverColor: #45ada8; 
+	--cardColor: #493f3f;
+	--fontColor: #e5fcc2;
+	*/
+	
 	font-family: "Helvetica";
 
 }
@@ -11,7 +46,8 @@
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96;
+  color: var(--fontColor);/*#868e96;*/
+  background-color: var(--backgroundColor);
 }
 
 @media (min-width: 992px) {
@@ -30,7 +66,7 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #fontColor;
 }
 
 h1 {
@@ -40,6 +76,13 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+}
+
+.modal-content {
+    background-color: var(--backgroundColor);
+}
+.card {
+    background-color: var(--cardColor);
 }
 
 .subheading {
@@ -54,7 +97,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: var(--color1);
+  color: var(--accentColor);
 }
 
 .list-social-icons a .fa-lg {
@@ -66,7 +109,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: var(--color1);
+  color: var(--accentColor);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -141,19 +184,19 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: var(--color1) !important;
+  background-color: var(--accentColor) !important;
 }
 
 .text-primary {
-  color: var(--color1) !important;
+  color: var(--accentColor) !important;
 }
 
 a {
-  color: var(--color1);
+  color: var(--accentColor);
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: var(--hoverColor);
 }
 
 .carousel-control-prev-icon,
