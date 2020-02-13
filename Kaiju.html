@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Voxzilla</title>
-    <script src="Test/Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Test/Build/KaijuWeb.json");
-    </script>
-  </head>
-  <body>
-    <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tim Kaiser</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+
+	<!-- WebGl -->
+	<html lang="en-us">
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Unity WebGL Player | Voxzilla</title>
+		<script src="Kaiju/UnityLoader.js"></script>
+		<script>
+		  UnityLoader.instantiate("unityContainer", "Kaiju/KaijuWeb.json");
+		</script>
+	  </head>
+	  <body>
+		<div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+	  </body>
+	</html>
+
+  <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none"></span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#projects">Back</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+
+  <!-- Game -->
+	<style>
+		.webgl-content {
+		    width: 45vh;
+			margin: auto;
+		}
+	</style>
+    <div class="webgl-content">
+		<h2> Mow It </h2>
+		<style>
+		.container {
+		    width: 45vh;
+			height: 80vh;
+			margin: auto;
+			background: gray;
+		}
+		</style>
+		<div class="container" id="gameContainer"></div>
+        <div class="container" id="text">
+          <h3>Controls</h3>
+          <p> This game is intended to be controlled via touchscreen. On PC you can use W,A,S,D or mouse clicks.</p>
+          <h3> Project Description </h3>
+          <p> This project came to life as part of the course "Von der Idee zum Produkt", where we had to develope a game for the generation 50+.
+            My focus were people who do not have much experience with video games yet. I therefore tried to make this game as intuitive as possible.
+            That's why it is intended to be played on tablets or smartphones.
+          </p>
+          <h3> The Game </h3>
+          <p> This game is a puzzlegame where you control a lawnmower that can only drive in one of four directions. The lawnmower only stops once it hits
+            an obstacle or the edge of the level.
+          </p>
+        </div>
+		</div>
+    </div>
   </body>
 </html>
+
+
