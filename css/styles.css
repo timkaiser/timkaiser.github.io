@@ -10427,3 +10427,25 @@ form .row:first-child .floating-label-form-group {
 .embed-container.ratio4x3 {
   padding-bottom: 75%;
 }
+
+.social-icon {
+  height: 3rem;
+  color: white;
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  opacity: 0.6;
+}
+
+.email-header{
+  color: white;
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+}
+
+.email-header:hover {
+  opacity: 0.6;
+  color: white;
+}
